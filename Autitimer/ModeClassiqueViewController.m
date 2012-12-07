@@ -69,22 +69,12 @@ int x1;
 //    
 //    [self.navigationController pushViewController:detailVC1 animated:YES];
     
-        [self.navigationController popViewControllerAnimated:YES];
-
+        [self.navigationController popViewControllerAnimated:NO];
+ 
 }
 
 
 
-//- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-//{
-//    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-//    if (self) {
-//        // Custom initialization
-//        self.title = @"ModeRond";
-//        
-//    }
-//    return self;
-//}
 
 - (void)didReceiveMemoryWarning
 {

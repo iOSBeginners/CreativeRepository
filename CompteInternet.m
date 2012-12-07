@@ -112,7 +112,7 @@ else if([title isEqualToString:@"Register"])
     if (cell == nil) {
         
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
-        
+         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     //unsigned lung  ---> %lu
 
