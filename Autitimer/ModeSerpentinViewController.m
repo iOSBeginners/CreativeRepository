@@ -18,7 +18,6 @@
     if (!test) {
         UIImage *buttonImage = [UIImage imageNamed:@"pause.png"];
         
-        
         test=1;
         [myBouton setImage:buttonImage forState:UIControlStateNormal];   
         
@@ -34,7 +33,7 @@
 - (IBAction)goBack:(id)sender
 {//{x=x1;
     x1=-320;
-    [self.navigationController popViewControllerAnimated:YES];
+    [self.navigationController popViewControllerAnimated:NO];
 }
 
 

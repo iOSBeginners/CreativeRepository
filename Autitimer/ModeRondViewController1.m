@@ -17,8 +17,6 @@ int w;
 -(IBAction)toggleButton:(id)sender {
     if (!test) {
         UIImage *buttonImage = [UIImage imageNamed:@"pause.png"];
-        
-        
         test=1;
         [myBouton setImage:buttonImage forState:UIControlStateNormal];   
         
@@ -36,20 +34,13 @@ int w;
 - (IBAction)goBack:(id)sender
 {   //la position du cercle
     x1=0;
-    [self.navigationController popViewControllerAnimated:YES];
+    [self.navigationController popViewControllerAnimated:NO];
 }
 
 
 - (void)loadView {
-
 	[super loadView];
-	
-	
-    
-
-
 }
-
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
