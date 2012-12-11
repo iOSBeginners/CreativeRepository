@@ -92,6 +92,9 @@
 		7133F313164018B9001E2A14 /* GallerieView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7133F312164018B9001E2A14 /* GallerieView.m */; };
 		713C2BEA1501241200C5B4BA /* TempsPredefinisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 713C2BE81501241200C5B4BA /* TempsPredefinisViewController.m */; };
 		713C2BEB1501241200C5B4BA /* TempsPredefinisViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 713C2BE91501241200C5B4BA /* TempsPredefinisViewController.xib */; };
+		7156E6B316772CE10018C433 /* ModeClassiqueViewControllerp.m in Sources */ = {isa = PBXBuildFile; fileRef = 7156E6B216772CE10018C433 /* ModeClassiqueViewControllerp.m */; };
+		7156E6B616772D0D0018C433 /* ModeClassiquep.m in Sources */ = {isa = PBXBuildFile; fileRef = 7156E6B516772D0D0018C433 /* ModeClassiquep.m */; };
+		7156E6B816772D1B0018C433 /* ModeClassiquep.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7156E6B716772D1B0018C433 /* ModeClassiquep.xib */; };
 		715A978616245C9A0008B391 /* ImageAlbumDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 715A978416245C990008B391 /* ImageAlbumDetail.m */; };
 		715A978716245C9A0008B391 /* ImageAlbumDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 715A978516245C9A0008B391 /* ImageAlbumDetail.xib */; };
 		715E6F47161C502100B1B972 /* GallerieCompte.m in Sources */ = {isa = PBXBuildFile; fileRef = 715E6F45161C502000B1B972 /* GallerieCompte.m */; };
@@ -286,6 +289,11 @@
 		713C2BE71501241200C5B4BA /* TempsPredefinisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempsPredefinisViewController.h; sourceTree = "<group>"; };
 		713C2BE81501241200C5B4BA /* TempsPredefinisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempsPredefinisViewController.m; sourceTree = "<group>"; };
 		713C2BE91501241200C5B4BA /* TempsPredefinisViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TempsPredefinisViewController.xib; sourceTree = "<group>"; };
+		7156E6B116772CD30018C433 /* ModeClassiqueViewControllerp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModeClassiqueViewControllerp.h; sourceTree = "<group>"; };
+		7156E6B216772CE10018C433 /* ModeClassiqueViewControllerp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModeClassiqueViewControllerp.m; sourceTree = "<group>"; };
+		7156E6B416772CEF0018C433 /* ModeClassiquep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModeClassiquep.h; sourceTree = "<group>"; };
+		7156E6B516772D0D0018C433 /* ModeClassiquep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModeClassiquep.m; sourceTree = "<group>"; };
+		7156E6B716772D1B0018C433 /* ModeClassiquep.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModeClassiquep.xib; sourceTree = "<group>"; };
 		715A978316245C990008B391 /* ImageAlbumDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageAlbumDetail.h; path = ../ImageAlbumDetail.h; sourceTree = "<group>"; };
 		715A978416245C990008B391 /* ImageAlbumDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageAlbumDetail.m; path = ../ImageAlbumDetail.m; sourceTree = "<group>"; };
 		715A978516245C9A0008B391 /* ImageAlbumDetail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ImageAlbumDetail.xib; path = ../ImageAlbumDetail.xib; sourceTree = "<group>"; };
@@ -673,6 +681,11 @@
 				718D205314DC052E00F7E10F /* ModeClassique.h */,
 				718D205414DC052E00F7E10F /* ModeClassique.m */,
 				718D205014DC052100F7E10F /* ModeClassique.xib */,
+				7156E6B116772CD30018C433 /* ModeClassiqueViewControllerp.h */,
+				7156E6B216772CE10018C433 /* ModeClassiqueViewControllerp.m */,
+				7156E6B416772CEF0018C433 /* ModeClassiquep.h */,
+				7156E6B516772D0D0018C433 /* ModeClassiquep.m */,
+				7156E6B716772D1B0018C433 /* ModeClassiquep.xib */,
 				71BF0AEE15FB743C00A3465B /* ModeRondViewController1.h */,
 				71BF0AEF15FB744600A3465B /* ModeRondViewController1.m */,
 				71BF0AF315FB749D00A3465B /* ModeRond1.h */,
@@ -917,6 +930,7 @@
 				7105B69D166D0BB100217A0E /* Default-568h@2x.png in Resources */,
 				7105B69F166D0BEA00217A0E /* Default.png in Resources */,
 				7105B6A1166D0C0100217A0E /* Default@2x.png in Resources */,
+				7156E6B816772D1B0018C433 /* ModeClassiquep.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -993,6 +1007,8 @@
 				7122F07F164BAC8A00FA9596 /* CompteConnecter.m in Sources */,
 				71C5E60A164BAFA300549187 /* PlusInfo.m in Sources */,
 				7105B615166CFF1F00217A0E /* Reachability.m in Sources */,
+				7156E6B316772CE10018C433 /* ModeClassiqueViewControllerp.m in Sources */,
+				7156E6B616772D0D0018C433 /* ModeClassiquep.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

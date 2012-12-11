@@ -31,7 +31,7 @@
     
     ClassiqueModeViewController *detailVC = [[ClassiqueModeViewController alloc] initWithNibName:@"ClassiqueModeViewController" bundle:nil];
     
-	[self.navigationController pushViewController:detailVC animated:YES];
+	[self.navigationController pushViewController:detailVC animated:NO];
         [detailVC autorelease];
 }
 

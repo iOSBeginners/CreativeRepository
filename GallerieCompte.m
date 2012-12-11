@@ -28,7 +28,7 @@ float a;
 }
 
 -(IBAction)toggleButton:(id)sender {
-if (!test) {
+//if (!test) {
         UIImage *buttonImage8 = [UIImage imageNamed:@"GallerieABleu.png"];
         
     
@@ -37,44 +37,45 @@ if (!test) {
     
           UIImage *buttonImage3 = [UIImage imageNamed:@"GallerieTGris.png"];
             [boutonTelephone setImage:buttonImage3 forState:UIControlStateNormal];
-    test1=1;
-            test=1;  
-    }
-    else {
-        
-        UIImage *buttonImage = [UIImage imageNamed:@"GallerieAGris.png"];
-        [boutonAuticiel setImage:buttonImage forState:UIControlStateNormal];
-        
-        UIImage *buttonImage4 = [UIImage imageNamed:@"GallerieTBleu.png"];
-        [boutonTelephone setImage:buttonImage4 forState:UIControlStateNormal];
-        
-        test1=0;
-        test=0;
 
-    }
+//            test=1;  
+//    }
+//    else {
+//        
+//        UIImage *buttonImage = [UIImage imageNamed:@"GallerieAGris.png"];
+//        [boutonAuticiel setImage:buttonImage forState:UIControlStateNormal];
+//        
+//        UIImage *buttonImage4 = [UIImage imageNamed:@"GallerieTBleu.png"];
+//        [boutonTelephone setImage:buttonImage4 forState:UIControlStateNormal];
+//        
+//
+//        test=0;
+//
+//    }
 
 }
 -(IBAction)toggleButton1:(id)sender {
-    if (!test1) {
-        UIImage *buttonImage = [UIImage imageNamed:@"GallerieTGris.png"];
-            UIImage *buttonImage1 = [UIImage imageNamed:@"GallerieABleu.png"];
-        [boutonAuticiel setImage:buttonImage1 forState:UIControlStateNormal];
-        passeAuticiel=1;
-        test1=1;
-        test=1;
-        [boutonTelephone setImage:buttonImage forState:UIControlStateNormal];
-        
-    }
-    else {
-        
+    
+//    if (!test) {
+//        UIImage *buttonImage = [UIImage imageNamed:@"GallerieTGris.png"];
+//            UIImage *buttonImage1 = [UIImage imageNamed:@"GallerieABleu.png"];
+//        [boutonAuticiel setImage:buttonImage1 forState:UIControlStateNormal];
+//        passeAuticiel=1;
+//
+////        test=1;
+//        [boutonTelephone setImage:buttonImage forState:UIControlStateNormal];
+    
+//    }
+//    else {
+//        
         UIImage *buttonImage7 = [UIImage imageNamed:@"GallerieTBleu.png"];
         [boutonTelephone setImage:buttonImage7 forState:UIControlStateNormal];
         UIImage *buttonImage2 = [UIImage imageNamed:@"GallerieAGris.png"];
         [boutonAuticiel setImage:buttonImage2 forState:UIControlStateNormal];
-        test1=0;
-        test=0;
-
-    }
+//
+//        test=0;
+//
+//    }
     
 }
 

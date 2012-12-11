@@ -73,7 +73,6 @@
 						<string key="NSFrame">{{20, 204}, {111, 112}}</string>
 						<reference key="NSSuperview" ref="663662039"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:222</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -137,7 +136,7 @@
 						<string key="NSFrame">{{247, 12}, {64, 32}}</string>
 						<reference key="NSSuperview" ref="663662039"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="595669130"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:328</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -195,32 +194,6 @@
 							<int key="NSfFlags">16</int>
 						</object>
 					</object>
-					<object class="IBUIButton" id="595669130">
-						<reference key="NSNextResponder" ref="663662039"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{297, 16}, {18, 19}}</string>
-						<reference key="NSSuperview" ref="663662039"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="160219430"/>
-						<string key="NSReuseIdentifierKey">_NS:225</string>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">4</int>
-						<bool key="IBUIShowsTouchWhenHighlighted">YES</bool>
-						<reference key="IBUIHighlightedTitleColor" ref="611552238"/>
-						<object class="NSColor" key="IBUINormalTitleColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
-						</object>
-						<reference key="IBUINormalTitleShadowColor" ref="473336816"/>
-						<object class="IBUIFontDescription" key="IBUIFontDescription" id="20443207">
-							<int key="type">2</int>
-							<double key="pointSize">15</double>
-						</object>
-						<reference key="IBUIFont" ref="302298126"/>
-					</object>
 					<object class="IBUIButton" id="133315661">
 						<reference key="NSNextResponder" ref="663662039"/>
 						<int key="NSvFlags">292</int>
@@ -244,7 +217,10 @@
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">Picture.png</string>
 						</object>
-						<reference key="IBUIFontDescription" ref="20443207"/>
+						<object class="IBUIFontDescription" key="IBUIFontDescription">
+							<int key="type">2</int>
+							<double key="pointSize">15</double>
+						</object>
 						<reference key="IBUIFont" ref="302298126"/>
 					</object>
 				</array>
@@ -346,7 +322,6 @@
 						<array class="NSMutableArray" key="children">
 							<reference ref="290871088"/>
 							<reference ref="205168451"/>
-							<reference ref="595669130"/>
 							<reference ref="160219430"/>
 							<reference ref="69914551"/>
 							<reference ref="133315661"/>
@@ -381,11 +356,6 @@
 						<reference key="parent" ref="663662039"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">42</int>
-						<reference key="object" ref="595669130"/>
-						<reference key="parent" ref="663662039"/>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">44</int>
 						<reference key="object" ref="133315661"/>
 						<reference key="parent" ref="663662039"/>
@@ -409,7 +379,6 @@
 				<string key="39.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<real value="0.0" key="39.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
 				<string key="4.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="42.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="44.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="46.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 			</dictionary>
