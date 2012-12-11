@@ -8,7 +8,7 @@
 
 #import "ModeTriangle.h"
 #import "ModeTriangleViewController.h"
-
+#import "AudioToolbox/AudioToolbox.h"
 #import "ClassiqueModeViewController.h"
 
 NSTimer *myTimer;
@@ -161,6 +161,12 @@ NSTimer *myTimer;
         [myTimer invalidate];
         //on élimine la variable d'instance(myTimer) au cas ou on invoque la fonction invalidate a nouveau sa ne génére pas d'excéption 
         myTimer = nil;
+        
+        NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"norecording" ofType:@"wav"];
+        SystemSoundID soundID;
+        AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath: soundPath], &soundID);
+        AudioServicesPlaySystemSound (soundID);
+        
         
 
     }

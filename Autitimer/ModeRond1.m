@@ -7,7 +7,7 @@
 //
 
 #import "ModeRond1.h"
-
+#import "AudioToolbox/AudioToolbox.h"
 
 #import "ClassiqueModeViewController.h"
 
@@ -177,14 +177,14 @@ NSTimer *myTimer;
         [myTimer invalidate];
         //on élimine la variable d'instance(myTimer) au cas ou on invoque la fonction invalidate a nouveau sa ne génére pas d'excéption 
         myTimer = nil;
-        //jouer un son à la fin
-//        NSURL *noSoundFileURL=[NSURL fileURLWithPath:
-//                               [[NSBundle mainBundle] 
-//                                pathForResource:@"norecording" ofType:@"wav"]];
-//        self.audioPlayer =  [[AVAudioPlayer alloc] 
-//                             initWithContentsOfURL:noSoundFileURL error:nil];
-//        [self.audioPlayer play];
-//        label.text = @"fini";
+        NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"norecording" ofType:@"wav"];
+        SystemSoundID soundID;
+        AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath: soundPath], &soundID);
+        AudioServicesPlaySystemSound (soundID);
+        
+        
+        
+
     }
     
 }

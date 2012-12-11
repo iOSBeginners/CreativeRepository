@@ -8,7 +8,7 @@
 
 #import "ModeSerpentin.h"
 #import "ModeSerpentinViewController.h"
-
+#import "AudioToolbox/AudioToolbox.h"
 #import "ClassiqueModeViewController.h"
 
 NSTimer *myTimer;
@@ -204,12 +204,13 @@ NSTimer *myTimer;
     CGColorRelease(color1);
 
     
-   if(p!=0) 
+//   if(p!=0)
        //On a diviser notre forme en 13 parties de lignes verticale et horizentale
        //mémes les formes identiques n'on pas les mémes coordonnées puisque l'établissement des coordonnées s'est basé sur le tatonement
        //a c'est le temps que le camembert doit respecter pour parcourir chaque forme quelqu'elle soit
        //on a passer ce paramétre dans la méthode de l'appel de la page
-   {if (a >= (decompte) ) {
+//   {
+       if (a > (decompte) ) {
 
         //convertir du type float vers string et l'afficher dans le label correspendant
         labelChronoSecondes.text = [NSString stringWithFormat:@"%.f", chronoSecondes];
@@ -229,17 +230,10 @@ NSTimer *myTimer;
             chronoHeures = chronoHeures + 1;
         }
        
-       
-       
-
-       
-    
 
         
             CGContextRef context = UIGraphicsGetCurrentContext();
-       
 
-       
             CGContextSetLineWidth(context, 27.7);
             
             CGColorSpaceRef colorspace = CGColorSpaceCreateDeviceRGB();
@@ -645,11 +639,23 @@ if(passe3==1)
         CGContextStrokePath(context);
         CGColorSpaceRelease(colorspace);
         CGColorRelease(color);            
-////        
-        //jouer un son à la fin
-       
-    }}p++;
+// la variable cadna va permettre de jouer le sond une seule fois
+        if (cadna==0)
+        {//jouer un son à la fin
+        NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"norecording" ofType:@"wav"];
+        SystemSoundID soundID;
+        AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath: soundPath], &soundID);
+        AudioServicesPlaySystemSound (soundID);
+ 
+            cadna++;
+        }
+        
+    }
+//   }
     
+    
+//    p++;
+
 }
 
 

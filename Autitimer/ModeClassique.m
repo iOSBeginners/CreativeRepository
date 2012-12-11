@@ -14,8 +14,8 @@
 
 #import "math.h"
 #import "ChoisirImageAlbum.h"
+#import "AudioToolbox/AudioToolbox.h"
 
-#import <AVFoundation/AVFoundation.h>
 NSTimer *myTimer;
 NSTimer *myTimer1;
 NSTimer *myTimer2;
@@ -215,18 +215,13 @@ if(touchChrono==1)
         myTimer = nil;
         w=1;
         
-        NSString *soundFilePath =
-        [[NSBundle mainBundle] pathForResource: @"son"
-                                        ofType: @"mp3"];
+        NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"norecording" ofType:@"wav"];
+        SystemSoundID soundID;
+        AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath: soundPath], &soundID);
+        AudioServicesPlaySystemSound (soundID);
         
-        NSURL *fileURL = [[NSURL alloc] initFileURLWithPath: soundFilePath];
-        
-        AVAudioPlayer *newPlayer =
-        [[AVAudioPlayer alloc] initWithContentsOfURL: fileURL
-                                               error: nil];
-     
-        
-        [newPlayer play];
+        // sa permet de vibrer le téléphone en plus du sound qui se déclenche
+        AudioServicesPlaySystemSound (kSystemSoundID_Vibrate);
         
      
 

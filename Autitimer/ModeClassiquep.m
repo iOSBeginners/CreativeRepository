@@ -11,11 +11,10 @@
 #import "ClassiqueModeViewController.h"
 #import "ModeRondViewController1.h"
 #import "TempsPredefinisViewController.h"
-
+#import "AudioToolbox/AudioToolbox.h"
 #import "math.h"
 #import "ChoisirImageAlbum.h"
 
-#import <AVFoundation/AVFoundation.h>
 NSTimer *myTimer;
 NSTimer *myTimer1;
 NSTimer *myTimer2;
@@ -215,19 +214,14 @@ if(touchChrono==1)
         myTimer = nil;
         w=1;
         
-        NSString *soundFilePath =
-        [[NSBundle mainBundle] pathForResource: @"son"
-                                        ofType: @"mp3"];
+        NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"norecording" ofType:@"wav"];
+        SystemSoundID soundID;
+        AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath: soundPath], &soundID);
+        AudioServicesPlaySystemSound (soundID);
+        //[soundPath release];
         
-        NSURL *fileURL = [[NSURL alloc] initFileURLWithPath: soundFilePath];
         
-        AVAudioPlayer *newPlayer =
-        [[AVAudioPlayer alloc] initWithContentsOfURL: fileURL
-                                               error: nil];
-     
-        
-        [newPlayer play];
-        
+//        
      
 
     }

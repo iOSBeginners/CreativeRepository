@@ -99,6 +99,7 @@
 		715A978716245C9A0008B391 /* ImageAlbumDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 715A978516245C9A0008B391 /* ImageAlbumDetail.xib */; };
 		715E6F47161C502100B1B972 /* GallerieCompte.m in Sources */ = {isa = PBXBuildFile; fileRef = 715E6F45161C502000B1B972 /* GallerieCompte.m */; };
 		715E6F48161C502100B1B972 /* GallerieCompte.xib in Resources */ = {isa = PBXBuildFile; fileRef = 715E6F46161C502000B1B972 /* GallerieCompte.xib */; };
+		7177159A16773D1400EA17A7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7177159916773D1400EA17A7 /* AudioToolbox.framework */; };
 		717B8CE9164043C3007AD3F6 /* ImageCompteD.m in Sources */ = {isa = PBXBuildFile; fileRef = 717B8CE8164043C2007AD3F6 /* ImageCompteD.m */; };
 		718D204714DC04DE00F7E10F /* ClassiqueModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 718D204514DC04DE00F7E10F /* ClassiqueModeViewController.m */; };
 		718D204814DC04DE00F7E10F /* ClassiqueModeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 718D204614DC04DE00F7E10F /* ClassiqueModeViewController.xib */; };
@@ -300,6 +301,7 @@
 		715E6F44161C502000B1B972 /* GallerieCompte.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GallerieCompte.h; path = ../GallerieCompte.h; sourceTree = "<group>"; };
 		715E6F45161C502000B1B972 /* GallerieCompte.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GallerieCompte.m; path = ../GallerieCompte.m; sourceTree = "<group>"; };
 		715E6F46161C502000B1B972 /* GallerieCompte.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GallerieCompte.xib; path = ../GallerieCompte.xib; sourceTree = "<group>"; };
+		7177159916773D1400EA17A7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		717B8CE7164043B3007AD3F6 /* ImageCompteD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCompteD.h; sourceTree = "<group>"; };
 		717B8CE8164043C2007AD3F6 /* ImageCompteD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCompteD.m; sourceTree = "<group>"; };
 		718D204414DC04DE00F7E10F /* ClassiqueModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassiqueModeViewController.h; sourceTree = "<group>"; };
@@ -399,6 +401,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7177159A16773D1400EA17A7 /* AudioToolbox.framework in Frameworks */,
 				71D2AB8C15FE05A30036BA97 /* AVFoundation.framework in Frameworks */,
 				7133F307163FD79D001E2A14 /* SystemConfiguration.framework in Frameworks */,
 				7133F305163FD60C001E2A14 /* libsqlite3.0.dylib in Frameworks */,
@@ -622,6 +625,7 @@
 		71FF7A8D14CC847600054B98 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7177159916773D1400EA17A7 /* AudioToolbox.framework */,
 				7133F306163FD79D001E2A14 /* SystemConfiguration.framework */,
 				71C1A77C16256EFA008F22EF /* MapKit.framework */,
 				71C1A77A16256EE9008F22EF /* ImageIO.framework */,
