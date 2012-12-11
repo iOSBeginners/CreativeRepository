@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "ModeClassiqueViewController.h"
+#import "ModeClassiqueViewControllerp.h"
 #import "ClassiqueModeViewController.h"
 #import "ModeClassique.h"
 #import "ChoisirImageAlbum.h"
@@ -15,7 +15,7 @@
 int test;
 int w;
 int x1;
-@implementation ModeClassiqueViewController
+@implementation ModeClassiqueViewControllerp
 
 @synthesize myBouton;
 

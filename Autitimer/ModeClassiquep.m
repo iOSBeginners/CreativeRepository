@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "ModeClassique.h"
+#import "ModeClassiquep.h"
 #import "ModeClassiqueViewController.h"
 #import "ClassiqueModeViewController.h"
 #import "ModeRondViewController1.h"
@@ -20,7 +20,7 @@ NSTimer *myTimer;
 NSTimer *myTimer1;
 NSTimer *myTimer2;
 UIImage *image10;
-@implementation ModeClassique
+@implementation ModeClassiquep
 @synthesize myLabel;
 @synthesize image2,image77;
 

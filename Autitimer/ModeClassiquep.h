@@ -16,7 +16,7 @@ extern NSTimer *myTimer1;
 extern NSTimer *myTimer2;
 extern UIImage *image10;
 
-@interface ModeClassique : UIView {
+@interface ModeClassiquep : UIView {
     int draw1,touch;
     float m,h1,j1,k1,l1;
     float x,k,g,b2,x1,y1,z1,w1;

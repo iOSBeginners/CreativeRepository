@@ -13,7 +13,7 @@ extern int test;
 extern int w;
 extern int x1;
 
-@interface ModeClassiqueViewController : UIViewController
+@interface ModeClassiqueViewControllerp : UIViewController
 
 {UIImage *image10;}
 @property (weak, nonatomic) IBOutlet UIButton *myBouton;
